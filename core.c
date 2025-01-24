@@ -12,7 +12,7 @@ struct my_struct {
     char name[64];
 };
 
-static int my_ioctl(struct file *file, unsigned int cmd, unsigned long arg) {
+static long my_ioctl(struct file *file, unsigned int cmd, unsigned long arg) {
     struct my_struct data;
     struct my_struct __user *user_data = (struct my_struct __user *)arg;
 
@@ -53,3 +53,4 @@ module_exit(my_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Your Name");
 MODULE_DESCRIPTION("A simple ioctl example");
+

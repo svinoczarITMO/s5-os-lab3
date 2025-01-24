@@ -1,5 +1,12 @@
 .DS_Store
 .vscode
 *.out
-program
+
 Dockerfile
+*.cmd
+*.mod
+*.mod.c
+*.ko
+*.o
+*.symvers
+*.order

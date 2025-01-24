@@ -12,7 +12,7 @@ struct my_struct {
 };
 
 int main() {
-    int fd = open("/dev/my_dev", O_RDWR);
+    int fd = open("/dev/ksv_shelter", O_RDWR);
     if (fd < 0) {
         std::cerr << "Failed to open device" << std::endl;
         return 1;
@@ -27,6 +27,8 @@ int main() {
 
     std::cout << "ID: " << data.id << std::endl;
     std::cout << "Name: " << data.name << std::endl;
+    std::cout << "SWAG percentage: " << data.swag_percent << std::endl;
+    std::cout << "Date of birth: " << data.birth_date << std::endl;
 
     close(fd);
     return 0;
