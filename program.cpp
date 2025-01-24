@@ -9,6 +9,8 @@
 struct my_struct {
     int id;
     char name[64];
+    int swag_percent;
+    char birth_date[64];
 };
 
 int main() {

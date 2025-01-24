@@ -10,3 +10,4 @@ Dockerfile
 *.o
 *.symvers
 *.order
+program
